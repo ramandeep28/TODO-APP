@@ -7,8 +7,8 @@ body{
 }
 
 .container{
-    background-color: rgb(229, 233, 14);
-    color: rgb(6, 240, 76);
+    background-color: #fca87e;
+    color: #96af25;
 }
 
 .container, 
@@ -27,18 +27,31 @@ body{
 
 }
 
+.task-list{
+    padding-left: 0;
+}
+
 .task-input{
     text-align: center;
     font-size: 2rem;
     height: 4rem;
     width: 30%;
+    margin: auto;
+    display: block;
 }
 
 .Task-Container li {
     text-align: center;
     font-size: 1.5rem;
-    list-style: none;  
-    background-color: rgb(10, 104, 212);
-    width: 100%;
-    margin-top: 5px;
+    list-style: none;
+    background-color: #0b032d;
+    width: 40%;
+    margin: 10px auto 0px auto;
+}
+
+@media screen and (max-width: 768px){ /*used to make website mobile friendly*/
+    .task-input,
+    .task-container li {
+        width: 70%;
+    }
 }
